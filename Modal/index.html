@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    
+    <div id="modal">
+        <div id="modal-closeButton">X</div>
+        <div id="modal-header">New Recipe</div>
+        <div id="modal-form">
+            <form id="new-recipe-form">
+                <div class="form-field">
+                    <label for="recipe-name">Recipe Name: </label><br>
+                    <input id="recipe-name" name="recipeName" placeholder="Enter Recipe Name" class="input" />
+                </div>
+                <div class="form-field">
+                    <label for="recipe-image">Recipe Image: </label><br>
+                    <input id="recipe-image" type="file" name="recipeImage" />
+                </div>
+                <div class="form-field">
+                    <label for="recipe-type">Recipe Type: </label>
+                    <select id="recipe-name" name="recipeType">
+                        <option>Chicken Recipe</option>
+                        <option>Cookie Recipe</option>
+                        <option>Cake Recipe</option>
+                        <option>Breakfast And Brunch Recipe</option>
+                        <option>BBQ And Grilling Recipe</option>
+                        <option>Appetizers And Snacks Recipe</option>
+                        <option>World Cuisine Recipe</option>
+                        <option>Instant Pop Recipe</option>
+                        <option>Slow Cooker Recipe</option>
+                        <option>Shrimp Recipe</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Recipe Ingredients: </label><br>
+                    <div id="ingredients">
+                        <input class="recipe-ingredient-name" name="ingredients[][name]" placeholder="Enter Ingredient Name" >
+                        <input class="recipe-ingredient-quantity" name="ingredients[][quantity]" placeholder="Enter Ingredient Quantity">
+                    </div>
+                    <button type="button" id="addMoreIngredients">Add More Ingredients</button>
+                </div>
+                <div class="form-field">
+                    <label for="recipe-direction">Recipe Directions</label><br>
+                    <textarea id="recipe-direction" name="recipeDirection" placeholder="Enter Recipe Directions"></textarea>
+                </div>
+
+                <button type="submit" id="modal-submit">Add New Recipe</button>
+            </form>
+        </div>
+        
+    </div>
+
+            <button id="giveMeModal">Modal</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis laborum obcaecati eaque doloribus provident. Molestiae, nisi libero? Dolorum blanditiis incidunt quo nulla aliquid laboriosam obcaecati totam debitis quidem eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis laborum obcaecati eaque doloribus provident. Molestiae, nisi libero? Dolorum blanditiis incidunt quo nulla aliquid laboriosam obcaecati totam debitis quidem eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis laborum obcaecati eaque doloribus provident. Molestiae, nisi libero? Dolorum blanditiis incidunt quo nulla aliquid laboriosam obcaecati totam debitis quidem eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis laborum obcaecati eaque doloribus provident. Molestiae, nisi libero? Dolorum blanditiis incidunt quo nulla aliquid laboriosam obcaecati totam debitis quidem eligendi!</p>
+        
+    <script src="index.js"></script>
+</body>
+</html>
